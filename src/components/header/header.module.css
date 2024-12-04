@@ -14,6 +14,22 @@
   flex-wrap: wrap;
 }
 
+.fontDesign {
+  position: relative;
+  display: inline-block;
+}
+
+.fontDesign::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  background-color: #f0c14b; /* Your background color */
+  z-index: -1;
+  border-radius: 5px; /* Optional */
+}
+
 .logo img {
   width: 199.01px;
   height: 100px;

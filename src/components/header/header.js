@@ -70,7 +70,12 @@ const Header = () => {
 
       {/* Hero Section */}
       <div className="text-center mt-5">
-        <h2 className="fw-bold">ابقى متصلاً اينما كنت</h2>
+        <h2 className="fw-bold">
+          <span className="position-relative">
+            ابقى متصلاً{" "}
+            <span className={`${styles.fontDesign}`}>اينما كنت</span>
+          </span>
+        </h2>
         <p>في اكثر من 200 دولة</p>
         <div className="d-flex justify-content-center">
           <div className="col-lg-4">
@@ -86,7 +91,7 @@ const Header = () => {
               <div className={`col-lg-4 bg-white p-2 ${styles.filterBtn}`}>
                 دولية
               </div>
-              <div className="col-lg-4">ثارية</div>
+              <div className="col-lg-4">قارية</div>
               <div className="col-lg-4">عالمية</div>
             </div>
           </div>
