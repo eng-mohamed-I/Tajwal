@@ -1,0 +1,61 @@
+.header {
+  background-color: #3da3c2; /* Customize as needed */
+  padding: 10px 100px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navItems {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems li {
+  margin: 0 10px;
+}
+
+.navItems a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navItems a:hover {
+  color: #353535;
+}
+
+.auth {
+  display: flex;
+  gap: 10px;
+}
+
+.loginBtn,
+.signinBtn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.loginBtn {
+  border: none;
+}
+.loginBtn:hover,
+.signinBtn:hover {
+  background-color: #dea94d;
+  color: #101010;
+}
