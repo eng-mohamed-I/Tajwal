@@ -1,0 +1,45 @@
+.footer {
+  background-color: #565656; /* Gray background color */
+  padding: 10px 20px;
+  color: #606161;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Make it responsive */
+}
+
+.left {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #000; 
+}
+
+.right {
+  text-align: right;
+  font-size: 14px;
+  margin-top: 5px; /* For better spacing on smaller screens */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center; /* Center content on smaller screens */
+  }
+
+  .right {
+    margin-top: 10px; /* Add space between sections */
+  }
+}

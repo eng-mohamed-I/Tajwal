@@ -1,12 +1,22 @@
+import React from "react";
+import styles from "./footer.module.css";
+
 const Footer = () => {
   return (
-    <div className="bg-dark">
-        <div></div>
-      <div className="d-flex">
-        <div></div>
-        <div></div>
+    <footer className={`${styles.footer} text-white`}>
+      <div className={styles.container}>
+        <div className={styles.right}>جميع الحقوق محفوظة</div>
+
+        <div className={styles.left}>
+          <a href="#" className={styles.link}>
+            سياسية الخصوصية
+          </a>
+          <a href="#" className={styles.link}>
+            سياسية الاستخدام
+          </a>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
