@@ -6,7 +6,7 @@
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 .navbar {
@@ -14,6 +14,8 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 2; 
+  position: relative;
 }
 
 .fontDesign {
@@ -42,6 +44,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
+  z-index: 3; /* Ensure hamburger is above other elements */
 }
 
 .bar {
@@ -58,6 +61,8 @@
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 }
 
 .navItems li {
@@ -82,6 +87,8 @@
   display: flex;
   gap: 10px;
   margin-right: 50px;
+  position: relative;
+  z-index: 2;
 }
 
 .loginBtn,
@@ -108,12 +115,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 2;
 }
 
 .filterBtn {
   color: #336279;
   border-radius: 10px 10px 0px 0px;
   background-color: darkgray;
+  z-index: 2;
 }
 
 /* Responsive styles */
@@ -125,6 +134,7 @@
 
   .hamburger {
     display: flex;
+    z-index: 3;
   }
 
   .navItems {
@@ -135,6 +145,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 5px;
+    z-index: 2;
   }
 
   .navItems li {
@@ -148,5 +159,6 @@
   .auth {
     margin-top: 10px;
     justify-content: center;
+    z-index: 2;
   }
 }
