@@ -2,3 +2,8 @@
   border: 1px solid gray;
 }
 
+.showMoreBtn {
+  border: none;
+  outline: none;
+  background-color: #575050;
+}

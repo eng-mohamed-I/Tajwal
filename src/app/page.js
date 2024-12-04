@@ -32,62 +32,62 @@ export default function Home() {
               >
                 <div
                   role="button"
-                  className={`d-flex justify-content-center align-items-center shadow-sm rounded-1 text-center gap-2 py-2 px-3 bg-white `}
+                  className={`d-flex justify-content-between align-items-center shadow-sm rounded-1 text-center gap-2 py-2 px-3 bg-white text-dark  `}
                 >
-                  <div>{country}</div>
-                  <div>
-                    <img
-                      className="rounded-1"
-                      src="https://via.placeholder.com/20"
-                      alt={`${country} placeholder`}
-                    />
+                  <div className="text-cemter d-flex gap-2">
+                    <div>
+                      <img
+                        className="rounded-1"
+                        src="https://via.placeholder.com/20"
+                        alt={`${country} placeholder`}
+                      />
+                    </div>
+                    <div>{country}</div>
                   </div>
+
+                  <i class="fa-solid fa-angle-left"></i>
                 </div>
               </div>
             ))}
           </div>
           <div className="text-center">
-            <small
-              role="button"
-              className=" py-2 px-5 bg-dark text-light rounded-1 mt-4"
+            <button
+              className={`${style.showMoreBtn}  py-2 px-5 rounded-1 mt-4`}
             >
-              عرض جميع الدول
-            </small>
+              <small role="button" className="text-light">
+                عرض جميع الدول
+              </small>
+            </button>
           </div>
-          <div></div>
         </div>
       </div>
       <div className="container-fluid mt-3 mb-3">
         <div className="container">
-          <p className="text-dark">"كيف تستخدم تجوال</p>
+          <p className="text-secondary">كيف تستخدم “تجوال”</p>
           <div className="row m-5">
-            <div className="col-lg-3">
+            <div className="col-lg-3 text-center">
+              <img className="rounded-1" src="Group.png" alt="phone picture" />
+              <p className="text-secondary fw-bold">حمل التطبيق</p>
+            </div>
+            <div className="col-lg-3 text-center">
               <img
                 className="rounded-1"
-                src="https://via.placeholder.com/200x400"
+                src="Layer_1.png"
                 alt="phone picture"
               />
-            </div>{" "}
-            <div className="col-lg-3">
+              <p className="text-secondary fw-bold">اختر الواجهة والباقة</p>
+            </div>
+            <div className="col-lg-3 text-center">
               <img
                 className="rounded-1"
-                src="https://via.placeholder.com/200x400"
+                src="Group (1).png"
                 alt="phone picture"
               />
-            </div>{" "}
-            <div className="col-lg-3">
-              <img
-                className="rounded-1"
-                src="https://via.placeholder.com/200x400"
-                alt="phone picture"
-              />
-            </div>{" "}
-            <div className="col-lg-3">
-              <img
-                className="rounded-1"
-                src="https://via.placeholder.com/200x400"
-                alt="phone picture"
-              />
+              <p className="text-secondary fw-bold">ثبت الشريحة</p>
+            </div>
+            <div className="col-lg-3 text-center">
+              <img className="rounded-1" src="Frame.png" alt="phone picture" />
+              <p className="text-secondary fw-bold"> استمتع بالباقة</p>
             </div>
           </div>
         </div>

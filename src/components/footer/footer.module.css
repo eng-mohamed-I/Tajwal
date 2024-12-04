@@ -1,7 +1,14 @@
+/* Sub Footer Styles */
+.subFooter {
+  background-color: #d9dee44d;
+  padding: 20px 0;
+}
+
+/* Footer Section */
 .footer {
-  background-color: #565656; /* Gray background color */
-  padding: 10px 20px;
-  color: #606161;
+  background-color: #626e7b;
+  color: #ffffff;
+  padding: 10px 0;
   font-size: 14px;
 }
 
@@ -9,12 +16,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Make it responsive */
+  flex-wrap: wrap;
+}
+
+.right {
+  text-align: right;
+  font-size: 14px;
 }
 
 .left {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  font-size: 10px;
 }
 
 .link {
@@ -24,22 +37,37 @@
 }
 
 .link:hover {
-  color: #000; 
+  color: #000;
 }
 
-.right {
-  text-align: right;
-  font-size: 14px;
-  margin-top: 5px; /* For better spacing on smaller screens */
+.mediumFont {
+  font-size: 12px;
 }
 
+.smallFont {
+  font-size: 10px;
+}
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .container {
+  .subFooter .container {
+    text-align: center;
+  }
+
+  .subFooter .row {
     flex-direction: column;
-    text-align: center; /* Center content on smaller screens */
+    gap: 20px;
+  }
+
+  .footer .container {
+    text-align: center;
+  }
+
+  .left {
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .right {
-    margin-top: 10px; /* Add space between sections */
+    margin-top: 10px;
   }
 }
