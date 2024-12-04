@@ -5,6 +5,8 @@
   padding-bottom: 0px;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: -2;
 }
 
 .navbar {
@@ -22,12 +24,13 @@
 .fontDesign::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 110%;
   height: 50%;
+  left: -7px;
   top: 50%;
-  background-color: #f0c14b; /* Your background color */
+  background-color: #336279; /* background color */
   z-index: -1;
-  border-radius: 5px; /* Optional */
+  border-radius: 5px;
 }
 
 .logo img {

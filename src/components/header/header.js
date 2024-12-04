@@ -73,7 +73,9 @@ const Header = () => {
         <h2 className="fw-bold">
           <span className="position-relative">
             ابقى متصلاً{" "}
-            <span className={`${styles.fontDesign}`}>اينما كنت</span>
+            <span className={`${styles.fontDesign}`}>
+              <span>اينما كنت</span>
+            </span>
           </span>
         </h2>
         <p>في اكثر من 200 دولة</p>
